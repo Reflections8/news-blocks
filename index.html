@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css" integrity="sha512-kftIhGv/k/oRHmfDRDEb1MxlaWlW4tiz21rx0yNC2zUWM2n4nxRtX1z3Ijmu54he3Yf9sBX4skJaCe3LTJV1rQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.min.css">
+    
+</head>
+<body>
+    <div class="site-wrap">
+        <main>
+            <style>
+                .rectangle .rectangle-wrap .h3 {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    margin-top: 30px;
+                    padding: 0 20px 0;
+                }
+                .slide_cont .h_2 {
+
+                    font-size: 30px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                #questions .questions-wrap .questions-title .h_2 {
+                    font-family: GaramondPremrPro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 44px;
+                    line-height: 53px;
+                    letter-spacing: 2.6px;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+                .purchase_title .h_2 {
+                    font-family: GaramondPremrPro;
+                    text-transform: uppercase;
+                    color: #fff;
+                    letter-spacing: 6px;
+                    font-size: 44px;
+                    font-weight: 400;
+                    width: 100%;
+                    display: block;
+                }
+                b.h_2.products-title {
+                    text-align: center;
+                    letter-spacing: 6px;
+                    font-size: 42px;
+                    line-height: 1.1;
+                    font-family: "GaramondPremrPro", sans-serif;
+                    text-transform: uppercase;
+                    margin-bottom: 40px;
+                    width: 100%;
+                    display: block;
+                }
+                .service-nastroyka .h_2 {
+                    font-family: Futura New;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 30px;
+                    line-height: 34px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 36px;
+                    margin-top: 80px;
+                }
+                section#rent_block .h_2 {
+
+                font-family: GaramondPremrPro;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 44px;
+                line-height: 50px;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+                color: #000000;
+
+                }
+                form#contact2 .h_2 {
+                    font-family: GaramondPremrPro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 44px;
+                    line-height: 1.1;
+                    text-align: center;
+                    letter-spacing: 2.6px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-top: 50px;
+                    text-align: center;
+                    display: block;
+                }
+                section#additional_block .h_2 {
+
+                    font-family: GaramondPremrPro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 44px;
+                    line-height: 1.1;
+                    text-align: center;
+                    letter-spacing: 2.6px;
+                    text-transform: uppercase;
+                    color: black;
+                    margin-top: 50px;
+                    text-align: center;
+                    display: block;
+
+                }
+                .pwr_news .h_2 {
+                    margin: 0;
+                    font-family: GaramondPremrPro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 44px;
+                    line-height: 1.1;
+                    text-align: center;
+                    letter-spacing: 6px;
+                    text-transform: uppercase;
+                    color: #000000;
+                    text-align: center;
+                    display: block;
+                }
+                #about_block .h_2 {
+                    font-family: GaramondPremrPro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 44px;
+                    line-height: 1.1;
+                    text-align: center;
+                    letter-spacing: 6px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 50px;
+                    display: block;
+                }
+
+                .purchase_item .h3 {
+                    font-family: Futura New Book;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 19px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: #F1DC9A;
+                    border-bottom: 1px solid;
+                    padding-bottom: 10px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    display: block;
+                }
+                #about_block .about-right .h4, #about_block .about-left .h4 {
+                    font-family: Futura New Book;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 1.1;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 15px;
+                    display: block;
+                }
+                #rent_block .h4 {
+                    font-family: Futura New;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    padding-right: 180px;
+                    color: #000000;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+                #answer_block .h4 {
+                    margin: 30px 0 30px;
+                    font-family: Futura New;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    color: #FFFFFF;
+                    display: block;
+                }
+                #additional_block .h4 {
+                    font-family: Futura New;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 26px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #000000;
+                    display: block;
+                }
+                #additional_block .h3 {
+                    font-family: GaramondPremrPro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 28px;
+                    line-height: 34px;
+                    letter-spacing: 2.5px;
+                    text-transform: uppercase;
+                    color: #000000;
+                    margin-bottom: 5px;
+                    display: block;
+                }
+                #rent_block .h5 {
+                    font-family: Futura New;
+                    font-style: normal;
+                    font-weight: 450;
+                    font-size: 22px;
+                    line-height: 1.1;
+                    color: #000000;
+                    margin-bottom: 22px;
+                    margin-top: 30px;
+                    display: block;
+                }
+                div#error-not-found #content {
+                    padding-top: 110px;
+                }
+            </style>
+            <section id="smi">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <b class="h_2">Пресса о нас</b>
+                        </div>   
+                    </div>  
+
+                    <div class="row ">
+                        <div class="smi__slider swiper">
+                            <div class="smi__slider_wr swiper-wrapper">
+                                <div class="smi__slider_sl swiper-slide">
+                                    <img src="./img/smi-1.png" alt="">
+                                </div>
+                                <div class="smi__slider_sl swiper-slide">
+                                    <img src="./img/smi-2.png" alt="">
+                                </div>
+                                <div class="smi__slider_sl swiper-slide">
+                                    <img src="./img/smi-3.png" alt="">
+                                </div>
+                                <div class="smi__slider_sl swiper-slide">
+                                    <img src="./img/smi-4.png" alt="">
+                                </div>
+                                <div class="smi__slider_sl swiper-slide">
+                                    <img src="./img/smi-5.png" alt="">
+                                </div>
+                                <div class="smi__slider_sl swiper-slide">
+                                    <img src="./img/smi-6.png" alt="">
+                                </div>
+                                <div class="smi__slider_sl swiper-slide">
+                                    <img src="./img/smi-7.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="smi__pag"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <b class="h_2">Лучшая рекомендация</b>
+                            <h3 class="rec__subtitle">БЛАГОДАРСТВЕННЫЕ ПИСЬМА ОТ НАШИХ КЛИЕНТОВ</h3>
+                        </div>  
+                    </div>
+
+                    <div class="rec__content d-flex justify-content-between flex-wrap">
+
+                        <div class="rec__item d-flex align-items-start">
+                            <div class="rec__item_img">
+                                <img src="./img/rec.png" alt="">
+                            </div>
+                            <div class="rec__item_body">
+                                <h4 class="rec__item_body_title">
+                                    Haileybury Almaty
+                                </h4>
+                                <div class="rec__item_body_descr">
+                                    <p>
+                                        Настоящим письмом выражаем благодарность коллективу компании за индивидуальный подбор при выборе инструмента , а также соблюдение сроков поставки рояля и проведение работ по сборке и настройке...
+                                    </p>
+                                </div>
+                                <div class="rec__item_body_link">
+                                    <a data-micromodal-trigger="modal-1" href="#" class="n">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rec__item d-flex align-items-start">
+                            <div class="rec__item_img">
+                                <img src="./img/rec.png" alt="">
+                            </div>
+                            <div class="rec__item_body">
+                                <h4 class="rec__item_body_title">
+                                    Индерская детская школа искусств
+                                </h4>
+                                <div class="rec__item_body_descr">
+                                    <p>
+                                        Компания зарекомендовала себя надёжным поставщиком, ориентированным на клиентов и на оказание им услуг высокого качества...
+                                    </p>
+                                </div>
+                                <div class="rec__item_body_link">
+                                    <a data-micromodal-trigger="modal-2" href="#" class="n">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rec__item d-flex align-items-start">
+                            <div class="rec__item_img">
+                                <img src="./img/rec.png" alt="">
+                            </div>
+                            <div class="rec__item_body">
+                                <h4 class="rec__item_body_title">
+                                    Haileybury Almaty
+                                </h4>
+                                <div class="rec__item_body_descr">
+                                    <p>
+                                        Настоящим письмом выражаем благодарность коллективу компании за индивидуальный подбор при выборе инструмента , а также соблюдение сроков поставки рояля и проведение работ по сборке и настройке...
+                                    </p>
+                                </div>
+                                <div class="rec__item_body_link">
+                                    <a data-micromodal-trigger="modal-3" href="#" class="n">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rec__item d-flex align-items-start">
+                            <div class="rec__item_img">
+                                <img src="./img/rec.png" alt="">
+                            </div>
+                            <div class="rec__item_body">
+                                <h4 class="rec__item_body_title">
+                                    Haileybury Almaty
+                                </h4>
+                                <div class="rec__item_body_descr">
+                                    <p>
+                                        Настоящим письмом выражаем благодарность коллективу компании за индивидуальный подбор при выборе инструмента , а также соблюдение сроков поставки рояля и проведение работ по сборке и настройке...
+                                    </p>
+                                </div>
+                                <div class="rec__item_body_link">
+                                    <a data-micromodal-trigger="modal-4" href="#" class="n">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="pop" class="psc sct-bg sct-sound">
+                <!-- <div class="bg-img lozad" data-background-image="/assets/img/pop-bg.png" style="background-image: url(&quot;/assets/img/pop-bg.png&quot;);" data-loaded="true"></div> -->
+                <div class="bg-img" style="background-image: url('./img/pop-bg.png');"></div>
+                <div class="pwr">
+                    <div class="pct">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <b class="h_2">Популяризация живой музыки</b>
+                                <h3 class="pop__subtitle">мероприятия, организуемые нашим салоном</h3>
+                            </div> 
+                        </div>
+
+                        <div class="pop__content">
+                            <div class="pop__slider swiper">
+                                <div class="pop__slider_wr swiper-wrapper">
+                                    <a target="_blank"
+                                        href="https://news.pianos.kz/art-classic-pianos/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-1.png" alt="ART CLASSIC & PIANOS">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a target="_blank"
+                                        href="https://news.pianos.kz/konczert-klassicheskoj-muzyki/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-2.png" alt="ГАЛИЯ БИСЕНГАЛИЕВА И РОБЕРТ ЭЙМС">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/pianos-v-den-zashhity-detej/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-3.png" alt="PIANOS В ДЕНЬ ЗАЩИТЫ ДЕТЕЙ">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/detskaya-hudozhestvennaya-vystavka/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-4.png" alt="ДЕТСКАЯ ХУДОЖЕСТВЕННАЯ ВЫСТАВКА">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/detskij-konczert-pri-podderzhke-salona-pianos/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-5.png" alt="ДЕТСКИЙ КОНЦЕРТ ПРИ ПОДДЕРЖКЕ САЛОНА PIANOS">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/konczert-ko-dnyu-pobedy/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-6.png" alt="КОНЦЕРТ КО ДНЮ ПОБЕДЫ">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/detskij-konczert-malenkie-muzykanty/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-7.png" alt="ДЕТСКИЙ КОНЦЕРТ «МАЛЕНЬКИЕ МУЗЫКАНТЫ»">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/zakrytyj-konczert-olega-marsheva/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-8.png" alt="ЗАКРЫТЫЙ КОНЦЕРТ ОЛЕГА МАРШЕВА">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/besstrashnyj-dzhaz-konczert-omera-klyajna/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-9.png" alt="БЕССТРАШНЫЙ ДЖАЗ: КОНЦЕРТ ОМЕРА КЛЯЙНА">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/master-klass-bena-heverou/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-10.png" alt="МАСТЕР-КЛАСС БЕНА ХЕВЕРОУ">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/master-klass/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-11.png" alt="МАСТЕР-КЛАСС С ЛАУРЕАТОМ МЕЖДУНАРОДНЫХ КОНКУРСОВ АНДРЕЕМ ДУБОВЫМ В АЛМАТЫ">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a  target="_blank"
+                                        href="https://news.pianos.kz/pianos-glissando-jazz-day-2/"
+                                        class="pop__slider_sl swiper-slide">
+                                        <img src="./img/pop-12.png" alt="PIANOS «GLISSANDO» JAZZ DAY">
+
+                                        <div class="open-icon">
+                                            <img src="./img/fs.png" alt="">
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+    
+                                
+                            </div>
+                            <div class="pop__next" id="sw-next">
+                                <svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28 0H0V30H28V0Z" fill="#F1DC9A"/>
+                                    <g filter="url(#filter0_d_2896_1693)">
+                                    <path d="M10 5L18 15.403" stroke="black"/>
+                                    <path d="M10 25L18 14.5971" stroke="black"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_2896_1693" x="5.69531" y="4.60352" width="16.6094" height="28.793" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2896_1693"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2896_1693" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="pop__prev" id="sw-prev">
+                                <svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0H28V30H0V0Z" fill="#F1DC9A"/>
+                                    <g filter="url(#filter0_d_2896_1692)">
+                                    <path d="M18 5L10 15.403" stroke="black"/>
+                                    <path d="M18 25L10 14.5971" stroke="black"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_2896_1692" x="5.69531" y="4.60352" width="16.6094" height="28.793" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2896_1692"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2896_1692" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="modal" id="modal-1" aria-hidden="true">
+
+        <!-- [2] -->
+        <div  class="modal__layer"  tabindex="-1" data-micromodal-close>
+        
+            <!-- [3] -->
+            <div role="dialog" class="modal__wrapper" aria-modal="true" aria-labelledby="modal-1-title" >
+
+        
+            <div class="modal__content">
+                <button class="modal__close" data-micromodal-close>&times;</button>
+                
+                <div class="modal__content_body">
+                    <picture>
+                        <source srcset="" type="image/webp">
+                        <img src="" alt="">
+                    </picture>
+                </div>
+
+
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-2" aria-hidden="true">
+
+        <!-- [2] -->
+        <div  class="modal__layer"  tabindex="-1" data-micromodal-close>
+        
+            <!-- [3] -->
+            <div role="dialog" class="modal__wrapper" aria-modal="true" aria-labelledby="modal-1-title" >
+
+        
+            <div class="modal__content">
+                <button class="modal__close" data-micromodal-close>&times;</button>
+                
+                <div class="modal__content_body">
+                    <picture>
+                        <source srcset="" type="image/webp">
+                        <img src="" alt="">
+                    </picture>
+                </div>
+
+
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-3" aria-hidden="true">
+
+        <!-- [2] -->
+        <div  class="modal__layer"  tabindex="-1" data-micromodal-close>
+        
+            <!-- [3] -->
+            <div role="dialog" class="modal__wrapper" aria-modal="true" aria-labelledby="modal-1-title" >
+
+        
+            <div class="modal__content">
+                <button class="modal__close" data-micromodal-close>&times;</button>
+                
+                <div class="modal__content_body">
+                    <picture>
+                        <source srcset="" type="image/webp">
+                        <img src="" alt="">
+                    </picture>
+                </div>
+
+
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-4" aria-hidden="true">
+
+        <!-- [2] -->
+        <div  class="modal__layer"  tabindex="-1" data-micromodal-close>
+        
+            <!-- [3] -->
+            <div role="dialog" class="modal__wrapper" aria-modal="true" aria-labelledby="modal-1-title" >
+
+        
+            <div class="modal__content">
+                <button class="modal__close" data-micromodal-close>&times;</button>
+                
+                <div class="modal__content_body">
+                    <picture>
+                        <source srcset="" type="image/webp">
+                        <img src="" alt="">
+                    </picture>
+                </div>
+
+
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" integrity="sha512-pXR0JHbYm9+EGib6xR/w+uYs/u2V84ofPrBpkgLYyKvhZYJtUUvKSy1pgi8tJZAacsPwgf1kbhI4zwgu8OKOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <script src="./js/bundle.js"></script>
+    <script src="./js/ex.js"></script>
+</body>
+</html>
